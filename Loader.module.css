@@ -1,0 +1,50 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  z-index: 200;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  animation: fadeUp 0.5s ease both;
+}
+
+.ringOuter {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ringInner {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--gold);
+  border-right-color: rgba(201,168,76,0.25);
+  animation: spin 0.9s linear infinite;
+}
+
+.label {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: var(--text);
+}
+
+.sub {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  animation: pulse 2s ease infinite;
+}

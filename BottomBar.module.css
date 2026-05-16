@@ -1,0 +1,64 @@
+.bottomBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: linear-gradient(to top, rgba(7,7,12,0.95) 0%, transparent 100%);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid var(--border);
+  z-index: 5;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 130px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 8px var(--gold-glow);
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+.status {
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+}
+
+.center {
+  flex: 1;
+  text-align: center;
+}
+
+.hint {
+  font-size: 9px;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  min-width: 130px;
+  justify-content: flex-end;
+}
+
+.corner {
+  color: var(--gold);
+  opacity: 0.5;
+}
